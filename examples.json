@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Idoso de 70 anos: alto risco, imagem",
+    "input": {
+      "idade65": true,
+      "rot": "1"
+    },
+    "expected": {
+      "raw": {
+        "img": 1,
+        "step": 1
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade65": true,
+      "rot": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sem fator de baixo risco: imagem",
+    "input": {
+      "rot": "1"
+    },
+    "expected": {
+      "raw": {
+        "img": 1,
+        "step": 2
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "rot": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Colisão traseira simples, roda o pescoço: dispensável",
+    "input": {
+      "colisao": true,
+      "rot": "1"
+    },
+    "expected": {
+      "raw": {
+        "img": 0
+      },
+      "level": "low",
+      "verdict": "dispensável"
+    },
+    "originalInput": {
+      "colisao": true,
+      "rot": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Deambulou, não roda o pescoço: imagem",
+    "input": {
+      "deambulou": true,
+      "rot": "0"
+    },
+    "expected": {
+      "raw": {
+        "img": 1,
+        "step": 3
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "deambulou": true,
+      "rot": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sentado, rotação ainda não testada",
+    "input": {
+      "sentado": true,
+      "rot": "na"
+    },
+    "expected": {
+      "level": "mid",
+      "verdict": "rotação ativa"
+    },
+    "originalInput": {
+      "sentado": true,
+      "rot": "na"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Critério de exclusão: não aplicável",
+    "input": {
+      "excl": true,
+      "rot": "1"
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "excl": true,
+      "rot": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]
