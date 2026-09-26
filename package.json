@@ -1,19 +1,42 @@
 {
   "name": "@elucenia/tool-canadian-c-spine-rule",
   "version": "0.1.0",
-  "description": "Canadian C-Spine Rule",
+  "description": "Canadian C-Spine Rule · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "keywords": [
+    "elucenia",
+    "medical-calculator",
+    "clinical-score",
+    "healthcare",
+    "zero-dependencies",
+    "canadian-c-spine-rule"
+  ],
   "main": "calculator.js",
   "type": "commonjs",
-  "license": "MIT",
+  "files": [
+    "calculator.js",
+    "index.html",
+    "tool.json",
+    "examples.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "AUTHORSHIP.md",
+    "CITATION.cff"
+  ],
+  "author": "Felipe Guedes <contato@elucenia.org> (https://fgxdev.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://elucenia.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-canadian-c-spine-rule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elucenia/tool-canadian-c-spine-rule/issues"
+  },
   "scripts": {
     "test": "node test.cjs"
   },
   "engines": {
     "node": ">=18"
-  },
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Elucenia/tool-canadian-c-spine-rule.git"
   }
 }
