@@ -1,0 +1,270 @@
+{
+  "schema": "elucenia-current-per-tool-local-publication-candidate",
+  "id": "canadian-c-spine-rule",
+  "repository": "Elucenia/tool-canadian-c-spine-rule",
+  "parentCommitSha": "ee7d9ea1035bd0e12c2922763a217b8c7461b347",
+  "baseTreeSha": "6e806674a289d2c92207b276cc02b33fbb533378",
+  "protectedFiles": {
+    "LICENSE": {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    "NOTICE": {
+      "path": "NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fac4b9231186e35a28d988390192d1448d9e4f73",
+      "size": 1637,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/fac4b9231186e35a28d988390192d1448d9e4f73"
+    },
+    "AUTHORSHIP.md": {
+      "path": "AUTHORSHIP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a59f68d483058e166ef1af940ecd67f94dafeec4",
+      "size": 3299,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/a59f68d483058e166ef1af940ecd67f94dafeec4"
+    },
+    "CITATION.cff": {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6",
+      "size": 910,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6"
+    },
+    "SECURITY.md": {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "size": 894,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+    },
+    "CONTRIBUTING.md": {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c",
+      "size": 1472,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c"
+    },
+    ".github/workflows/ci.yml": {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "size": 279,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+    },
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "size": 19,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+    },
+    ".gitignore": {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "size": 42,
+      "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+    }
+  },
+  "oldCandidate": {
+    "manifest": {
+      "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+      "bytes": 6823260,
+      "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+    },
+    "rowId": "canadian-c-spine-rule",
+    "publicationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/canadian-c-spine-rule/publication-provenance.json",
+      "bytes": 5392,
+      "sha256": "99dde5937b7549a560d6cc6977928c04a7894b410f35f401238d90df0fd9962f"
+    },
+    "integrationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/canadian-c-spine-rule/provenance.json",
+      "bytes": 56747,
+      "sha256": "1d772de0a2515e2bd348452a4e4412e03807b298ef23e6fadd28dd54758f01f6"
+    }
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/canadian-c-spine-rule/calculator.js",
+    "bytes": 503,
+    "sha256": "151303f34129e83a8029039c81b6b1da5af9315892ac19fb96751fbe9f55b8af"
+  },
+  "sourceToolSha256": "fc8e4d41067c17211cf3fbdb9bb8fad5a64af0d79d7ce87934aff7012dc77caa",
+  "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+  "implementationVersion": "canadian-c-spine-rule@native-2026-10-04+151303f34129",
+  "browserBundleSha256": "282c6b03c57b612a1f1b52984627457b736f9ce13dec6c1239ffc2a886ece2be",
+  "graph": {
+    "entry": "tool-code/canadian-c-spine-rule/calculator.js",
+    "modules": [
+      {
+        "file": "tool-code/canadian-c-spine-rule/calculator.js",
+        "bytes": 503,
+        "sha256": "151303f34129e83a8029039c81b6b1da5af9315892ac19fb96751fbe9f55b8af"
+      },
+      {
+        "file": "restored-methods.cjs",
+        "bytes": 5460,
+        "sha256": "64210e67b250298add7e7f76c7fddfcab0110c37c525c54af219a3a6f5283c93"
+      },
+      {
+        "file": "restoration-original-tools.json",
+        "bytes": 2293,
+        "sha256": "9aba575b607e087f377fb96ff7da6149dff248fab2b352f95166902955660c8e"
+      }
+    ],
+    "transforms": [
+      {
+        "file": "restored-methods.cjs",
+        "sourceSha256": "630dccade18742e4bc364b32f4ef4d6bc75aeceb262face8ddae806be7962c23",
+        "kind": "Deterministic AST selection of one existing define call plus unchanged shared arithmetic/schema helpers",
+        "selectedId": "canadian-c-spine-rule",
+        "otherMethodDefinitionsIncluded": 0
+      },
+      {
+        "file": "restoration-original-tools.json",
+        "sourceSha256": "ccee00665e024104d254acf77a43609acb02d593e016ee8c6b7cebf3769da389",
+        "kind": "One original field/source contract only; no other tools, reference banks or original results",
+        "selectedId": "canadian-c-spine-rule",
+        "keys": [
+          "id",
+          "title",
+          "fields",
+          "sources"
+        ]
+      }
+    ]
+  },
+  "currentActualHttpEvidence": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "tests": {
+    "cases": 6,
+    "sourceNodeParityPassed": true,
+    "browserVmParityPassed": true,
+    "independentOracleDerived": false,
+    "actualBrowserDOMVerified": false
+  },
+  "rights": {
+    "historicalPayloadLicenseDeclaration": "Apache-2.0",
+    "currentIntegrationPackageLicenseDeclaration": "MIT",
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/canadian-c-spine-rule/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/canadian-c-spine-rule/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedFilesPreservedFromOldPayload": [],
+    "protectedRemoteAttributionReferences": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fac4b9231186e35a28d988390192d1448d9e4f73",
+        "size": 1637,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/fac4b9231186e35a28d988390192d1448d9e4f73"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a59f68d483058e166ef1af940ecd67f94dafeec4",
+        "size": 3299,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/a59f68d483058e166ef1af940ecd67f94dafeec4"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6",
+        "size": 910,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c",
+        "size": 1472,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-canadian-c-spine-rule/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    },
+    "sourceSpecificEvidence": {
+      "sourceSpecificStatus": "not-approved-by-this-consolidation",
+      "sourceSpecificEvidence": null,
+      "wholeInstrumentApproval": false,
+      "oldCandidateInstrumentRightsApproval": "not-performed"
+    },
+    "scope": "Historical Apache declaration and current MIT integration notices retained with exact sources; no relicensing or instrument approval inferred",
+    "reviewRequired": true,
+    "divergences": [
+      "Historical payload and current package declare different license labels; scope/authorship mapping must be reviewed before distribution"
+    ],
+    "wholeInstrumentApproval": false
+  },
+  "appWrites": false,
+  "externalMutations": false,
+  "publicationPerformed": false,
+  "externalPublicationReady": false,
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

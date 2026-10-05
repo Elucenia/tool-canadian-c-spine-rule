@@ -1,0 +1,86 @@
+{
+  "schema": "elucenia-publication-base-reference",
+  "checkedAt": "2026-10-05T15:38:24.003Z",
+  "repo": "Elucenia/tool-canadian-c-spine-rule",
+  "branch": "main",
+  "commit": "ee7d9ea1035bd0e12c2922763a217b8c7461b347",
+  "treeSha": "6e806674a289d2c92207b276cc02b33fbb533378",
+  "status": "protected-hashes-unchanged",
+  "protectedFiles": [
+    {
+      "file": "LICENSE",
+      "historicalGitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "currentGitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "candidateGitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "candidateSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "same": true
+    },
+    {
+      "file": "NOTICE",
+      "historicalGitBlobSha1": "fac4b9231186e35a28d988390192d1448d9e4f73",
+      "currentGitBlobSha1": "fac4b9231186e35a28d988390192d1448d9e4f73",
+      "candidateGitBlobSha1": "fac4b9231186e35a28d988390192d1448d9e4f73",
+      "candidateSha256": "420d8871639b4584b90eb910e46a043d0fbd2176a1174415a9445a9d45935246",
+      "same": true
+    },
+    {
+      "file": "AUTHORSHIP.md",
+      "historicalGitBlobSha1": "a59f68d483058e166ef1af940ecd67f94dafeec4",
+      "currentGitBlobSha1": "a59f68d483058e166ef1af940ecd67f94dafeec4",
+      "candidateGitBlobSha1": "a59f68d483058e166ef1af940ecd67f94dafeec4",
+      "candidateSha256": "d03d9b2e448f45264038100207b0bf2254a0d5b0f60dd7c7c7052b480f11e583",
+      "same": true
+    },
+    {
+      "file": "CITATION.cff",
+      "historicalGitBlobSha1": "8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6",
+      "currentGitBlobSha1": "8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6",
+      "candidateGitBlobSha1": "8f95b5cfe0e0149bea7fae89e4eb1dea8015e8e6",
+      "candidateSha256": "23aa249c1d9b08d750fd6c1eb1625b2fb5429e6a7f02a8c07e7c97c5a204ff4b",
+      "same": true
+    },
+    {
+      "file": "SECURITY.md",
+      "historicalGitBlobSha1": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "currentGitBlobSha1": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "candidateGitBlobSha1": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "candidateSha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e",
+      "same": true
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "historicalGitBlobSha1": "afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c",
+      "currentGitBlobSha1": "afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c",
+      "candidateGitBlobSha1": "afd88b5b5ca2a36ec14aa46846e13ee3b1a1e27c",
+      "candidateSha256": "74003a805b1c32d0d7729d4bace19c4a535c466f2e586d8fb22610caedb480b5",
+      "same": true
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "historicalGitBlobSha1": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "currentGitBlobSha1": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "candidateGitBlobSha1": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "candidateSha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160",
+      "same": true
+    },
+    {
+      "file": ".gitattributes",
+      "historicalGitBlobSha1": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "currentGitBlobSha1": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "candidateGitBlobSha1": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "candidateSha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "same": true
+    },
+    {
+      "file": ".gitignore",
+      "historicalGitBlobSha1": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "currentGitBlobSha1": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "candidateGitBlobSha1": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "candidateSha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8",
+      "same": true
+    }
+  ],
+  "sourceReceiptSha256": "afde2d1f95a20293350a160c2edfbbb80c4c8a740fbb8c2ad29790c83e17a082",
+  "newProtectedFilesAreFirstAddition": false,
+  "publicationPerformed": false
+}

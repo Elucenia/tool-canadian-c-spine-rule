@@ -1,61 +1,32 @@
 # Canadian C-Spine Rule
 
-Identificador: `canadian-c-spine-rule`. Pacote independente da plataforma ELUCENIA, para navegador e Node.js.
+ELUCENIA · Felipe Guedes. Local publication candidate prepared from the current per-tool source. No publication or deployment has been performed.
 
-## Situação
+## Documentation in ten languages
 
-- Revisão: **restricted**. A saída principal do código importado emite indicação ou dispensa de imagem e ordem para testar rotação cervical. Ocultar apenas os campos de interpretação não retira essas ordens. Suspender execução até revisar elegibilidade, sequência clínica e uma apresentação que não produza decisão assistencial automática.
-- Execução: **desativada; o adaptador retorna REVIEW_REQUIRED**.
-- Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 6 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **pendente**.
-- Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
+- [Português (Brasil)](documentation/pt-BR.md) · [ELUCENIA](https://elucenia.org/pt-br/ferramentas/canadian-c-spine-rule)
+- [English](documentation/en.md) · [ELUCENIA](https://elucenia.org/en/tools/canadian-c-spine-rule)
+- [Español](documentation/es.md) · [ELUCENIA](https://elucenia.org/es/herramientas/canadian-c-spine-rule)
+- [Français](documentation/fr.md) · [ELUCENIA](https://elucenia.org/fr/outils/canadian-c-spine-rule)
+- [Deutsch](documentation/de.md) · [ELUCENIA](https://elucenia.org/de/werkzeuge/canadian-c-spine-rule)
+- [Italiano](documentation/it.md) · [ELUCENIA](https://elucenia.org/it/strumenti/canadian-c-spine-rule)
+- [العربية](documentation/ar.md) · [ELUCENIA](https://elucenia.org/ar/tools/canadian-c-spine-rule)
+- [中文](documentation/zh.md) · [ELUCENIA](https://elucenia.org/zh/tools/canadian-c-spine-rule)
+- [日本語](documentation/ja.md) · [ELUCENIA](https://elucenia.org/ja/tools/canadian-c-spine-rule)
+- [हिन्दी](documentation/hi.md) · [ELUCENIA](https://elucenia.org/hi/tools/canadian-c-spine-rule)
 
-## Uso no Node.js
+The README introduction is in English; the linked usage, field, method, limits, source and review documentation is available in each listed language. Bibliographic titles and schema identifiers retain their source identity.
 
-```js
-const { calculate } = require('./calculator.js');
-const example = require('./examples.json')[0];
-console.log(calculate(example.input));
-```
+## Run locally
 
-Execute `node test.cjs` (ou `npm test`) para conferir os exemplos. Abra `index.html` para usar a versão local do navegador. Não há dependências npm.
+Serve this directory with a static HTTP server and open index.html. The Node entry is calculator.js. Run node test.cjs to replay all 6 existing synthetic reference cases against the packaged current method. Calculation uses a fixed per-tool local module graph; it needs no API key, remote calculation service, app tree or database.
 
-## Contrato
+## Edition and evidence
 
-`calculate(input)` recebe um objeto, devolve `{id, main, label, raw, clinicalValidation}` ou `{error, code, field?}`. Consulte `tool.json` e `metadata.fields` para nomes, unidades, opções e intervalos. Números aceitam valores finitos ou strings numéricas; opções precisam corresponder às chaves documentadas. Campos obrigatórios vazios, booleanos inválidos, valores fora de intervalo e resultados não finitos são rejeitados. Somente checkbox omitido representa falso; um campo numérico ou uma opção obrigatória nunca é preenchido automaticamente.
+Stiell 2001; Canadian C-Spine Rule
 
-Interpretações, ordens terapêuticas e tabelas herdadas não são retornadas pelo adaptador. Classificações e valores ainda dependem da população e das limitações da fonte.
+examples.json contains current documented inputs/expected values. results.json records fresh source Node and packaged browser VM parity. evidence/http-reference-replay.json retains the corresponding completed HTTP replay against r5 build RYDdJbZxqrM8sgoyKEQc-. This is arithmetic and transport evidence; it is not full method/population, clinical or professional-language approval. The full independent bank is not included.
 
-## Fórmula / versão
+## License and attribution
 
-Expressão e contexto suspensos para revisão. Consulte a fonte.
-
-A transcrição acima documenta o acervo de origem e pode requerer atualização. Revisão documental: https://pubmed.ncbi.nlm.nih.gov/11597285/
-
-## Condições e limites
-
-Regra de decisão em três etapas para adultos alertas (Glasgow 15) e estáveis após trauma, que define quem precisa de imagem da coluna cervical.
-
-Confirme população, exclusões, unidades, versão e diretriz aplicável ao país e serviço. O resultado não deve ser utilizado isoladamente para diagnóstico, alta ou prescrição. O pacote não representa certificação clínica, aprovação regulatória ou indicação para toda população. Veja a revisão completa em `tool.json`.
-
-## Fontes originais
-
-- [Stiell IG et al. The Canadian C-Spine Rule for radiography in alert and stable trauma patients. JAMA, 2001.](https://doi.org/10.1001/jama.286.15.1841)
-- [Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.](https://doi.org/10.1056/NEJMoa031375)
-
-## Exemplos e rastreabilidade
-
-`examples.json` preserva `originalInput`, expectativa e entrada explícita do exemplo. Não foi necessário expandir opções zero nos exemplos.
-
-## O que esta ferramenta não faz
-
-- Não diagnostica, não prescreve e não substitui a avaliação de um médico. O resultado é a reprodução técnica de uma fórmula ou escore publicado.
-- Não envia dados a lugar nenhum: roda no navegador ou no Node.js, sem rede, sem telemetria, sem armazenamento.
-- Não guarda nem identifica pacientes. Não use com dados identificáveis fora de um ambiente que você controla.
-- Não tem validação clínica independente nem aprovação regulatória (ver "Situação").
-
-## Autoria e licença
-
-Criado e mantido por **Felipe Guedes** (Engenheiro de Software e Arquiteto de Sistemas, Toledo, Paraná, Brasil) para a **ELUCENIA**, uma cadeia médica e científica global para acelerar a descoberta. Criado em 2026-09-25 na organização [github.com/Elucenia](https://github.com/Elucenia).
-
-Licença **Apache-2.0** (arquivo `LICENSE`): você pode usar, copiar, modificar e embutir este código no seu site ou sistema, inclusive comercial, desde que mantenha o arquivo `NOTICE` e o aviso de copyright e declare as modificações. A licença cobre o código deste pacote; instrumentos, questionários, tabelas, traduções e marcas citados nas fontes mantêm os direitos dos seus titulares (ver `NOTICE`). Detalhes em `AUTHORSHIP.md`, `CITATION.cff`, `SECURITY.md` e `CONTRIBUTING.md`. Contato: contato@elucenia.org.
+Existing payload notices and protected attribution references remain preserved. METHOD-CODE-LICENSE.txt and METHOD-CODE-NOTICE.md, when present, preserve the current integration package notices verbatim. publication-provenance.json identifies their exact sources and any historical Apache/current MIT declaration difference. No new instrument, questionnaire, table, translation, publication, data or trademark rights are granted. The candidate requires source-specific rights and fresh remote/protected-file review before distribution.

@@ -1,0 +1,1580 @@
+{
+  "receipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "build": {
+    "id": "RYDdJbZxqrM8sgoyKEQc-",
+    "standaloneServer": {
+      "file": "reports/review-20261005-completion/deploy-lock/r5-isolated-runtime/.next/standalone/server.js",
+      "sha256": "631d43264038e7aa367b5405041eb3706d73fd3366925a7ef17a07119cfa166e",
+      "bytes": 10457
+    },
+    "catalogPin": {
+      "file": "deliveries/elucenia-next-hostinger-r5/.next/server/pages/en/tools.json",
+      "sha256": "33917dfdae9bea59cae22bfca34eaef2a21046a832af98c1a8d2718075de63ec",
+      "bytes": 103793
+    }
+  },
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r5 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "tool": {
+    "id": "canadian-c-spine-rule",
+    "title": "Canadian C-Spine Rule",
+    "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+    "implementationVersion": "canadian-c-spine-rule@native-2026-10-04+151303f34129",
+    "sources": [
+      [
+        "Stiell et al. · Canadian C-Spine Rule · artigo e critérios completos de 2001",
+        "https://jamanetwork.com/journals/jama/fullarticle/194296"
+      ],
+      [
+        "Stiell IG et al. The Canadian C-Spine Rule for radiography in alert and stable trauma patients. JAMA, 2001.",
+        "https://doi.org/10.1001/jama.286.15.1841"
+      ],
+      [
+        "Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.",
+        "https://doi.org/10.1056/NEJMoa031375"
+      ]
+    ],
+    "limits": "Não orienta realizar movimentos cervicais. Rotação não avaliada produz resultado incompleto. Critério ausente não equivale a ausência de lesão.",
+    "sourceEditionEvidence": [
+      {
+        "citation": "Stiell et al. · Canadian C-Spine Rule · artigo e critérios completos de 2001",
+        "url": "https://jamanetwork.com/journals/jama/fullarticle/194296",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      },
+      {
+        "citation": "Stiell IG et al. The Canadian C-Spine Rule for radiography in alert and stable trauma patients. JAMA, 2001.",
+        "url": "https://doi.org/10.1001/jama.286.15.1841",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      },
+      {
+        "citation": "Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.",
+        "url": "https://doi.org/10.1056/NEJMoa031375",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      }
+    ],
+    "calculator": {
+      "file": "deliveries/elucenia-next-hostinger-r5/private/tool-code/canadian-c-spine-rule/calculator.js",
+      "sha256": "151303f34129e83a8029039c81b6b1da5af9315892ac19fb96751fbe9f55b8af",
+      "bytes": 503
+    },
+    "cases": 6,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "replayed": 6,
+    "passed": 6,
+    "failed": 0,
+    "status": "passed"
+  },
+  "results": [
+    {
+      "id": "canadian-c-spine-rule",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Vetor sintético principal de referência",
+      "originalInput": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "1",
+        "contexto": "1"
+      },
+      "input": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "1",
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "img": 0,
+          "step": 3,
+          "incomplete": false
+        },
+        "main": "Negativo"
+      },
+      "recordedResult": {
+        "main": [
+          "Negativo",
+          ""
+        ],
+        "label": "Canadian C-Spine Rule",
+        "raw": {
+          "img": 0,
+          "step": 3,
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "excl": false,
+            "idade65": false,
+            "mecanismo": false,
+            "parestesia": false,
+            "colisao": false,
+            "sentado": true,
+            "deambulou": false,
+            "tardia": false,
+            "semdor": false,
+            "rot": "1",
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+          "startedAt": "2026-10-05T15:12:53.604Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "canadian-c-spine-rule",
+              "main": [
+                "Negativo",
+                ""
+              ],
+              "label": "Canadian C-Spine Rule",
+              "raw": {
+                "img": 0,
+                "step": 3,
+                "incomplete": false
+              },
+              "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "32566cd386ca2a503f23e2889e9f94e446dcd3b666d628b5043b40e0dc88e3cd",
+          "bytes": 230,
+          "elapsedMs": 3.214799999997922
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "startedAt": "2026-10-05T15:12:53.604Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "canadian-c-spine-rule",
+            "main": [
+              "Negativo",
+              ""
+            ],
+            "label": "Canadian C-Spine Rule",
+            "raw": {
+              "img": 0,
+              "step": 3,
+              "incomplete": false
+            },
+            "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "32566cd386ca2a503f23e2889e9f94e446dcd3b666d628b5043b40e0dc88e3cd",
+        "bytes": 230,
+        "elapsedMs": 3.214799999997922
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Negativo",
+            "obtained": "Negativo",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.img",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.img",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Negativo",
+            "obtained": "Negativo",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "canadian-c-spine-rule",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Alto risco prevalece; rotação não exigida",
+      "originalInput": {
+        "excl": false,
+        "idade65": true,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": null,
+        "contexto": "1"
+      },
+      "input": {
+        "excl": false,
+        "idade65": true,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": null,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "img": 1,
+          "step": 1,
+          "incomplete": false
+        },
+        "main": "Positivo"
+      },
+      "recordedResult": {
+        "main": [
+          "Positivo",
+          ""
+        ],
+        "label": "Canadian C-Spine Rule",
+        "raw": {
+          "img": 1,
+          "step": 1,
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "excl": false,
+            "idade65": true,
+            "mecanismo": false,
+            "parestesia": false,
+            "colisao": false,
+            "sentado": true,
+            "deambulou": false,
+            "tardia": false,
+            "semdor": false,
+            "rot": null,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+          "startedAt": "2026-10-05T15:12:53.916Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "canadian-c-spine-rule",
+              "main": [
+                "Positivo",
+                ""
+              ],
+              "label": "Canadian C-Spine Rule",
+              "raw": {
+                "img": 1,
+                "step": 1,
+                "incomplete": false
+              },
+              "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "20122ba61686ffb1a36cf6c7a689550ff7a252138b3b65082e86c46122c21380",
+          "bytes": 230,
+          "elapsedMs": 2.915000000000873
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "startedAt": "2026-10-05T15:12:53.916Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "canadian-c-spine-rule",
+            "main": [
+              "Positivo",
+              ""
+            ],
+            "label": "Canadian C-Spine Rule",
+            "raw": {
+              "img": 1,
+              "step": 1,
+              "incomplete": false
+            },
+            "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "20122ba61686ffb1a36cf6c7a689550ff7a252138b3b65082e86c46122c21380",
+        "bytes": 230,
+        "elapsedMs": 2.915000000000873
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Positivo",
+            "obtained": "Positivo",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.img",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.step",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.img",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.step",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Positivo",
+            "obtained": "Positivo",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "canadian-c-spine-rule",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Sem fator de baixo risco",
+      "originalInput": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": false,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "1",
+        "contexto": "1"
+      },
+      "input": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": false,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "1",
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "img": 1,
+          "step": 2,
+          "incomplete": false
+        },
+        "main": "Positivo"
+      },
+      "recordedResult": {
+        "main": [
+          "Positivo",
+          ""
+        ],
+        "label": "Canadian C-Spine Rule",
+        "raw": {
+          "img": 1,
+          "step": 2,
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "excl": false,
+            "idade65": false,
+            "mecanismo": false,
+            "parestesia": false,
+            "colisao": false,
+            "sentado": false,
+            "deambulou": false,
+            "tardia": false,
+            "semdor": false,
+            "rot": "1",
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+          "startedAt": "2026-10-05T15:12:54.230Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "canadian-c-spine-rule",
+              "main": [
+                "Positivo",
+                ""
+              ],
+              "label": "Canadian C-Spine Rule",
+              "raw": {
+                "img": 1,
+                "step": 2,
+                "incomplete": false
+              },
+              "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "de5e872b13f9f582aaf5698655a3cfea8b53ea07ec701b8a1a6a081c644ac1aa",
+          "bytes": 230,
+          "elapsedMs": 4.459100000000035
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "startedAt": "2026-10-05T15:12:54.230Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "canadian-c-spine-rule",
+            "main": [
+              "Positivo",
+              ""
+            ],
+            "label": "Canadian C-Spine Rule",
+            "raw": {
+              "img": 1,
+              "step": 2,
+              "incomplete": false
+            },
+            "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "de5e872b13f9f582aaf5698655a3cfea8b53ea07ec701b8a1a6a081c644ac1aa",
+        "bytes": 230,
+        "elapsedMs": 4.459100000000035
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Positivo",
+            "obtained": "Positivo",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.img",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.step",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.img",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.step",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Positivo",
+            "obtained": "Positivo",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "canadian-c-spine-rule",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Baixo risco; rotação insuficiente",
+      "originalInput": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "0",
+        "contexto": "1"
+      },
+      "input": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "0",
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "img": 1,
+          "step": 3,
+          "incomplete": false
+        },
+        "main": "Positivo"
+      },
+      "recordedResult": {
+        "main": [
+          "Positivo",
+          ""
+        ],
+        "label": "Canadian C-Spine Rule",
+        "raw": {
+          "img": 1,
+          "step": 3,
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "excl": false,
+            "idade65": false,
+            "mecanismo": false,
+            "parestesia": false,
+            "colisao": false,
+            "sentado": true,
+            "deambulou": false,
+            "tardia": false,
+            "semdor": false,
+            "rot": "0",
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+          "startedAt": "2026-10-05T15:12:54.545Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "canadian-c-spine-rule",
+              "main": [
+                "Positivo",
+                ""
+              ],
+              "label": "Canadian C-Spine Rule",
+              "raw": {
+                "img": 1,
+                "step": 3,
+                "incomplete": false
+              },
+              "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "437d0f1512703dda4b1644debc39e7aa7c588e28343a5896e6d1fd19a2caad4f",
+          "bytes": 230,
+          "elapsedMs": 2.941100000000006
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "startedAt": "2026-10-05T15:12:54.545Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "canadian-c-spine-rule",
+            "main": [
+              "Positivo",
+              ""
+            ],
+            "label": "Canadian C-Spine Rule",
+            "raw": {
+              "img": 1,
+              "step": 3,
+              "incomplete": false
+            },
+            "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "437d0f1512703dda4b1644debc39e7aa7c588e28343a5896e6d1fd19a2caad4f",
+        "bytes": 230,
+        "elapsedMs": 2.941100000000006
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Positivo",
+            "obtained": "Positivo",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.img",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.img",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.incomplete",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Positivo",
+            "obtained": "Positivo",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "canadian-c-spine-rule",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Rotação ainda não avaliada",
+      "originalInput": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "na",
+        "contexto": "1"
+      },
+      "input": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": "na",
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "img": null,
+          "step": 3,
+          "incomplete": true
+        },
+        "main": "Incompleto"
+      },
+      "recordedResult": {
+        "main": [
+          "Incompleto",
+          ""
+        ],
+        "label": "Canadian C-Spine Rule",
+        "raw": {
+          "img": null,
+          "step": 3,
+          "incomplete": true
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "excl": false,
+            "idade65": false,
+            "mecanismo": false,
+            "parestesia": false,
+            "colisao": false,
+            "sentado": true,
+            "deambulou": false,
+            "tardia": false,
+            "semdor": false,
+            "rot": "na",
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+          "startedAt": "2026-10-05T15:12:54.844Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "canadian-c-spine-rule",
+              "main": [
+                "Incompleto",
+                ""
+              ],
+              "label": "Canadian C-Spine Rule",
+              "raw": {
+                "img": null,
+                "step": 3,
+                "incomplete": true
+              },
+              "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1afcd8060da3c563f3b610138a5bb15e52cbcc49becf1e9399d17ed8762e9224",
+          "bytes": 234,
+          "elapsedMs": 3.721399999998539
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "startedAt": "2026-10-05T15:12:54.844Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "canadian-c-spine-rule",
+            "main": [
+              "Incompleto",
+              ""
+            ],
+            "label": "Canadian C-Spine Rule",
+            "raw": {
+              "img": null,
+              "step": 3,
+              "incomplete": true
+            },
+            "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1afcd8060da3c563f3b610138a5bb15e52cbcc49becf1e9399d17ed8762e9224",
+        "bytes": 234,
+        "elapsedMs": 3.721399999998539
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Incompleto",
+            "obtained": "Incompleto",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.img",
+            "expected": null,
+            "obtained": null,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.incomplete",
+            "expected": true,
+            "obtained": true,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.img",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.incomplete",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Incompleto",
+            "obtained": "Incompleto",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "canadian-c-spine-rule",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "Rotação omitida não vira negativo",
+      "originalInput": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": null,
+        "contexto": "1"
+      },
+      "input": {
+        "excl": false,
+        "idade65": false,
+        "mecanismo": false,
+        "parestesia": false,
+        "colisao": false,
+        "sentado": true,
+        "deambulou": false,
+        "tardia": false,
+        "semdor": false,
+        "rot": null,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "img": null,
+          "step": 3,
+          "incomplete": true
+        },
+        "main": "Incompleto"
+      },
+      "recordedResult": {
+        "main": [
+          "Incompleto",
+          ""
+        ],
+        "label": "Canadian C-Spine Rule",
+        "raw": {
+          "img": null,
+          "step": 3,
+          "incomplete": true
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "excl": false,
+            "idade65": false,
+            "mecanismo": false,
+            "parestesia": false,
+            "colisao": false,
+            "sentado": true,
+            "deambulou": false,
+            "tardia": false,
+            "semdor": false,
+            "rot": null,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+          "startedAt": "2026-10-05T15:12:55.143Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "canadian-c-spine-rule",
+              "main": [
+                "Incompleto",
+                ""
+              ],
+              "label": "Canadian C-Spine Rule",
+              "raw": {
+                "img": null,
+                "step": 3,
+                "incomplete": true
+              },
+              "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1afcd8060da3c563f3b610138a5bb15e52cbcc49becf1e9399d17ed8762e9224",
+          "bytes": 234,
+          "elapsedMs": 3.0865999999987253
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/canadian-c-spine-rule/calculate",
+        "startedAt": "2026-10-05T15:12:55.143Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "canadian-c-spine-rule",
+            "main": [
+              "Incompleto",
+              ""
+            ],
+            "label": "Canadian C-Spine Rule",
+            "raw": {
+              "img": null,
+              "step": 3,
+              "incomplete": true
+            },
+            "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1afcd8060da3c563f3b610138a5bb15e52cbcc49becf1e9399d17ed8762e9224",
+        "bytes": 234,
+        "elapsedMs": 3.0865999999987253
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Incompleto",
+            "obtained": "Incompleto",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.img",
+            "expected": null,
+            "obtained": null,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.incomplete",
+            "expected": true,
+            "obtained": true,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.img",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.step",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.incomplete",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Incompleto",
+            "obtained": "Incompleto",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "endBindings": true
+}

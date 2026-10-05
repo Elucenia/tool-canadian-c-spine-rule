@@ -2,9 +2,10 @@
   "tool": {
     "id": "canadian-c-spine-rule",
     "title": "Canadian C-Spine Rule",
-    "short": "Imagem cervical no trauma em paciente alerta",
-    "desc": "Aplique a Canadian C-Spine Rule em pacientes alertas e estáveis após trauma: fatores de alto risco, de baixo risco e rotação cervical ativa.",
-    "lead": "Regra de decisão em três etapas para adultos alertas (Glasgow 15) e estáveis após trauma, que define quem precisa de imagem da coluna cervical.",
+    "short": "Regra clínica em trauma cervical com elegibilidade confirmada",
+    "desc": "Registra a sequência da Canadian C-Spine Rule na população documentada. A ferramenta não orienta movimentos cervicais; rotação ainda não avaliada gera resultado incompleto.",
+    "lead": "Registra a sequência da Canadian C-Spine Rule na população documentada. A ferramenta não orienta movimentos cervicais; rotação ainda não avaliada gera resultado incompleto.",
+    "kind": "Escore",
     "spec": [
       "medicina-de-emergencia",
       "ortopedia-e-traumatologia",
@@ -13,75 +14,57 @@
     "fields": [
       [
         "excl",
-        "Critério de exclusão: &lt; 16 anos, Glasgow &lt; 15, sinais vitais anormais, trauma há mais de 48 h, trauma penetrante, paralisia aguda, doença vertebral conhecida ou cirurgia cervical prévia",
+        "Critério de exclusão: idade < 16 anos, Glasgow < 15, sinais vitais anormais, trauma há mais de 48 h, trauma penetrante, paralisia aguda, doença vertebral conhecida/cirurgia cervical prévia, retorno para reavaliação da mesma lesão ou gravidez",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "idade65",
         "<strong>Alto risco:</strong> idade ≥ 65 anos",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "mecanismo",
         "<strong>Alto risco:</strong> mecanismo perigoso (queda de ≥ 0,9 m ou 5 degraus, carga axial na cabeça, colisão em alta velocidade, capotamento ou ejeção, veículo recreativo motorizado, colisão de bicicleta)",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "parestesia",
         "<strong>Alto risco:</strong> parestesias nas extremidades",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "colisao",
-        "<strong>Baixo risco:</strong> colisão traseira simples",
+        "Baixo risco: colisão traseira simples (sem veículo lançado ao trânsito oposto, impacto por ônibus/caminhão grande, capotamento ou impacto em alta velocidade)",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "sentado",
         "<strong>Baixo risco:</strong> sentado na sala de emergência",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "deambulou",
         "<strong>Baixo risco:</strong> deambulou em algum momento após o trauma",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "tardia",
         "<strong>Baixo risco:</strong> dor cervical de início tardio",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "semdor",
         "<strong>Baixo risco:</strong> sem dor à palpação na linha média cervical",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ],
       [
         "rot",
@@ -92,32 +75,28 @@
             "0": "Não",
             "1": "Sim",
             "na": "Ainda não testado"
+          },
+          "opt": true
+        }
+      ],
+      [
+        "contexto",
+        "Trauma contuso há ≤ 48 h; idade ≥ 16 anos, Glasgow 15, sinais vitais normais e inclusão pela dor cervical ou lesão acima das clavículas + ausência de deambulação + mecanismo perigoso confirmados?",
+        "sel",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
           }
         }
       ]
     ],
-    "formula": "<ol><li><strong>Algum fator de alto risco</strong> (idade ≥ 65, mecanismo perigoso, parestesias)? Sim → imagem.</li><li><strong>Algum fator de baixo risco</strong> que permita testar a mobilidade com segurança? Não → imagem.</li><li><strong>Rotação ativa de 45°</strong> para os dois lados? Não → imagem; sim → imagem dispensável.</li></ol>",
-    "table": [
-      [
-        "Desempenho (Stiell, 2001)",
-        "Valor"
-      ],
-      [
-        "Sensibilidade para lesão cervical clinicamente importante",
-        "100%"
-      ],
-      [
-        "Especificidade",
-        "42,5%"
-      ]
-    ],
-    "tips": [
-      "Só teste a rotação cervical se não houver fator de alto risco e houver ao menos um fator de baixo risco: nunca faça o teste em quem já tem indicação de imagem.",
-      "A regra exige Glasgow 15 e sinais vitais normais; no politraumatizado instável ou com rebaixamento, a imagem é indicada.",
-      "Colisão traseira simples exclui empurrão para o tráfego, atingido por ônibus ou caminhão, capotamento e alta velocidade.",
-      "No estudo comparativo de 2003, a Canadian C-Spine Rule teve sensibilidade de 99,4% contra 90,7% do NEXUS, e reduziu mais o uso de radiografias."
-    ],
+    "formula": "<p>Sequência: exclusões → fatores de alto risco → existência de fator de baixo risco → rotação ativa já avaliada clinicamente.</p>",
     "sources": [
+      [
+        "Stiell et al. · Canadian C-Spine Rule · artigo e critérios completos de 2001",
+        "https://jamanetwork.com/journals/jama/fullarticle/194296"
+      ],
       [
         "Stiell IG et al. The Canadian C-Spine Rule for radiography in alert and stable trauma patients. JAMA, 2001.",
         "https://doi.org/10.1001/jama.286.15.1841"
@@ -129,119 +108,385 @@
     ],
     "cases": [
       [
-        "Idoso de 70 anos: alto risco, imagem",
+        "Vetor sintético principal de referência",
         {
-          "idade65": true,
-          "rot": "1"
-        },
-        {
-          "raw": {
-            "img": 1,
-            "step": 1
-          },
-          "level": "high"
-        }
-      ],
-      [
-        "Sem fator de baixo risco: imagem",
-        {
-          "rot": "1"
-        },
-        {
-          "raw": {
-            "img": 1,
-            "step": 2
-          },
-          "level": "high"
-        }
-      ],
-      [
-        "Colisão traseira simples, roda o pescoço: dispensável",
-        {
-          "colisao": true,
-          "rot": "1"
-        },
-        {
-          "raw": {
-            "img": 0
-          },
-          "level": "low",
-          "verdict": "dispensável"
-        }
-      ],
-      [
-        "Deambulou, não roda o pescoço: imagem",
-        {
-          "deambulou": true,
-          "rot": "0"
-        },
-        {
-          "raw": {
-            "img": 1,
-            "step": 3
-          },
-          "level": "high"
-        }
-      ],
-      [
-        "Sentado, rotação ainda não testada",
-        {
+          "excl": false,
+          "idade65": false,
+          "mecanismo": false,
+          "parestesia": false,
+          "colisao": false,
           "sentado": true,
-          "rot": "na"
+          "deambulou": false,
+          "tardia": false,
+          "semdor": false,
+          "rot": "1",
+          "contexto": "1"
         },
         {
-          "level": "mid",
-          "verdict": "rotação ativa"
+          "raw": {
+            "img": 0,
+            "step": 3,
+            "incomplete": false
+          },
+          "main": "Negativo"
         }
       ],
       [
-        "Critério de exclusão: não aplicável",
+        "Alto risco prevalece; rotação não exigida",
         {
-          "excl": true,
-          "rot": "1"
+          "excl": false,
+          "idade65": true,
+          "mecanismo": false,
+          "parestesia": false,
+          "colisao": false,
+          "sentado": true,
+          "deambulou": false,
+          "tardia": false,
+          "semdor": false,
+          "rot": null,
+          "contexto": "1"
         },
         {
-          "error": true
+          "raw": {
+            "img": 1,
+            "step": 1,
+            "incomplete": false
+          },
+          "main": "Positivo"
+        }
+      ],
+      [
+        "Sem fator de baixo risco",
+        {
+          "excl": false,
+          "idade65": false,
+          "mecanismo": false,
+          "parestesia": false,
+          "colisao": false,
+          "sentado": false,
+          "deambulou": false,
+          "tardia": false,
+          "semdor": false,
+          "rot": "1",
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "img": 1,
+            "step": 2,
+            "incomplete": false
+          },
+          "main": "Positivo"
+        }
+      ],
+      [
+        "Baixo risco; rotação insuficiente",
+        {
+          "excl": false,
+          "idade65": false,
+          "mecanismo": false,
+          "parestesia": false,
+          "colisao": false,
+          "sentado": true,
+          "deambulou": false,
+          "tardia": false,
+          "semdor": false,
+          "rot": "0",
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "img": 1,
+            "step": 3,
+            "incomplete": false
+          },
+          "main": "Positivo"
+        }
+      ],
+      [
+        "Rotação ainda não avaliada",
+        {
+          "excl": false,
+          "idade65": false,
+          "mecanismo": false,
+          "parestesia": false,
+          "colisao": false,
+          "sentado": true,
+          "deambulou": false,
+          "tardia": false,
+          "semdor": false,
+          "rot": "na",
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "img": null,
+            "step": 3,
+            "incomplete": true
+          },
+          "main": "Incompleto"
+        }
+      ],
+      [
+        "Rotação omitida não vira negativo",
+        {
+          "excl": false,
+          "idade65": false,
+          "mecanismo": false,
+          "parestesia": false,
+          "colisao": false,
+          "sentado": true,
+          "deambulou": false,
+          "tardia": false,
+          "semdor": false,
+          "rot": null,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "img": null,
+            "step": 3,
+            "incomplete": true
+          },
+          "main": "Incompleto"
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
-      "testedAt": "2026-09-25",
+      "testedAt": "2026-10-03",
       "total": 6,
       "passed": 6,
-      "failures": []
+      "failures": [],
+      "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+      "scope": "Synthetic source-rule arithmetic checks. Independent clinical validation not performed."
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
-    }
-  },
-  "review": {
-    "id": "canadian-c-spine-rule",
-    "reason": "A saída principal do código importado emite indicação ou dispensa de imagem e ordem para testar rotação cervical. Ocultar apenas os campos de interpretação não retira essas ordens. Suspender execução até revisar elegibilidade, sequência clínica e uma apresentação que não produza decisão assistencial automática.",
-    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11597285/",
-    "sourceTitle": "Stiell et al. — Canadian C-Spine Rule (estudo original)",
-    "sourceDate": "2001-10-17",
-    "publisherRegion": "Canadá",
-    "observedMain": [
-      "Indicada — imagem cervical",
-      "Dispensável — imagem cervical",
-      "Testar — rotação cervical"
-    ],
-    "status": "restricted",
-    "checkedAt": "2026-09-25",
+      "status": "passed",
+      "testedAt": "2026-10-03",
+      "total": 29,
+      "passed": 29,
+      "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+      "scope": "Independent expected values and source-rule boundary checks; not clinical approval.",
+      "publicCandidateBankOmitted": true
+    },
+    "limits": "Não orienta realizar movimentos cervicais. Rotação não avaliada produz resultado incompleto. Critério ausente não equivale a ausência de lesão.",
+    "methodVersion": "Stiell 2001; Canadian C-Spine Rule",
+    "currentMethodSource": {
+      "title": "Stiell et al. · Canadian C-Spine Rule · artigo e critérios completos de 2001",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/194296",
+      "version": "Stiell 2001; Canadian C-Spine Rule",
+      "checkedAt": "2026-10-03",
+      "access": "full-article"
+    },
+    "primaryVerification": {
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/194296",
+      "checked": "Artigo primário completo de 2001: inclusão, dez exclusões, três etapas da regra e definição de colisão traseira simples. Rotação não avaliada permanece como resultado incompleto.",
+      "access": "full-article"
+    },
     "clinicalValidation": "not-performed",
-    "reviewScope": "Triagem da saída de software em casos fornecidos; identificação da publicação original e conferência limitada de seu contexto. Não é auditoria integral da regra, validação clínica ou revisão médica assinada.",
-    "implementationOutputAudit": "completed-on-supplied-cases",
-    "sourceReviewDepth": "original-reference-and-context-only",
-    "suppressLegacyFormula": true
+    "languageReview": "not-performed",
+    "reviewStatus": "needs-review",
+    "implementationStatus": "available",
+    "versionEvidence": {
+      "status": "explicit-implemented-variant-and-existing-source-proofs-recorded",
+      "checkedAt": "2026-10-04T17:52:09.841Z",
+      "declaredMethodVersion": "Stiell 2001; Canadian C-Spine Rule",
+      "implementedVariant": "Sequência: exclusões → fatores de alto risco → existência de fator de baixo risco → rotação ativa já avaliada clinicamente.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "excl",
+            "label": "Critério de exclusão: idade < 16 anos, Glasgow < 15, sinais vitais anormais, trauma há mais de 48 h, trauma penetrante, paralisia aguda, doença vertebral conhecida/cirurgia cervical prévia, retorno para reavaliação da mesma lesão ou gravidez",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idade65",
+            "label": "<strong>Alto risco:</strong> idade ≥ 65 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "mecanismo",
+            "label": "<strong>Alto risco:</strong> mecanismo perigoso (queda de ≥ 0,9 m ou 5 degraus, carga axial na cabeça, colisão em alta velocidade, capotamento ou ejeção, veículo recreativo motorizado, colisão de bicicleta)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "parestesia",
+            "label": "<strong>Alto risco:</strong> parestesias nas extremidades",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "colisao",
+            "label": "Baixo risco: colisão traseira simples (sem veículo lançado ao trânsito oposto, impacto por ônibus/caminhão grande, capotamento ou impacto em alta velocidade)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sentado",
+            "label": "<strong>Baixo risco:</strong> sentado na sala de emergência",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "deambulou",
+            "label": "<strong>Baixo risco:</strong> deambulou em algum momento após o trauma",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tardia",
+            "label": "<strong>Baixo risco:</strong> dor cervical de início tardio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "semdor",
+            "label": "<strong>Baixo risco:</strong> sem dor à palpação na linha média cervical",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "rot",
+            "label": "Consegue rodar ativamente o pescoço 45° para a direita e para a esquerda?",
+            "type": "radio",
+            "optional": true,
+            "options": {
+              "0": "Não",
+              "1": "Sim",
+              "na": "Ainda não testado"
+            }
+          },
+          {
+            "key": "contexto",
+            "label": "Trauma contuso há ≤ 48 h; idade ≥ 16 anos, Glasgow 15, sinais vitais normais e inclusão pela dor cervical ou lesão acima das clavículas + ausência de deambulação + mecanismo perigoso confirmados?",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          }
+        ],
+        "hash": "0abaf5fe5e7ac5336416d57b928effe6168d644a50023083972684674a47fcbd",
+        "hashInputDefinition": "SHA256 of UTF8 JSON.stringify({id:tool.id,fields:tool.fields,formula:tool.formula,config:tool.config||null}), preserving declared order/value types; not a hash of versionEvidence.inputContract.fields display projection."
+      },
+      "sourceEditions": [
+        {
+          "citation": "Stiell et al. · Canadian C-Spine Rule · artigo e critérios completos de 2001",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/194296",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        },
+        {
+          "citation": "Stiell IG et al. The Canadian C-Spine Rule for radiography in alert and stable trauma patients. JAMA, 2001.",
+          "url": "https://doi.org/10.1001/jama.286.15.1841",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        },
+        {
+          "citation": "Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.",
+          "url": "https://doi.org/10.1056/NEJMoa031375",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        }
+      ],
+      "existingSourceEvidence": {
+        "currentMethodSource": {
+          "title": "Stiell et al. · Canadian C-Spine Rule · artigo e critérios completos de 2001",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/194296",
+          "version": "Stiell 2001; Canadian C-Spine Rule",
+          "checkedAt": "2026-10-03",
+          "access": "full-article"
+        },
+        "primaryVerification": {
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/194296",
+          "checked": "Artigo primário completo de 2001: inclusão, dez exclusões, três etapas da regra e definição de colisão traseira simples. Rotação não avaliada permanece como resultado incompleto.",
+          "access": "full-article"
+        }
+      },
+      "editionRecordingScope": "The methodVersion and all previously recorded source access/edition proofs are transcribed unchanged. This technical normalization makes no new bibliographic/full-text/source-formula confirmation; named existing read scopes remain in existingSourceEvidence. A missing standardized container did not mean the method edition was missing.",
+      "publicationEditionConfirmationReevaluated": false,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by technical hashes or metadata normalization; retain existing bounded source arithmetic and clinical review separately.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03",
+        "total": 29,
+        "passed": 29,
+        "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+        "scope": "Independent expected values and source-rule boundary checks; not clinical approval.",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "implementationHash": "151303f34129e83a8029039c81b6b1da5af9315892ac19fb96751fbe9f55b8af",
+      "implementationHashScope": "Exact current calculator.js bytes, individually verified in three app mirrors. This is not a full dependency-closure hash.",
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-04T17:52:09.841Z",
+          "scope": "First standardized container; explicit existing methodVersion and source proof objects preserved.",
+          "priorStandardizedContainerPresent": false,
+          "priorImplementationVersion": null,
+          "explicitMethodVersion": "Stiell 2001; Canadian C-Spine Rule",
+          "sourceEvidenceSha256": "68c41a0558fa8832ecb640d20dd3af59255d3e9eb83323f8fdb8f4b402894fd9",
+          "metadataAudit": {
+            "file": "reports/review-20261003/native-technical-bindings-audit-publication-final26.json",
+            "sha256": "e615fa3a42555f8fbeb4de8763893c3e981a73eae4c8c1994b33727e19ebd8c8"
+          }
+        }
+      ]
+    },
+    "implementationVersion": "canadian-c-spine-rule@native-2026-10-04+151303f34129"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "fc8e4d41067c17211cf3fbdb9bb8fad5a64af0d79d7ce87934aff7012dc77caa",
+  "omittedFullReferenceBanks": [
+    {
+      "at": "independentArithmeticTest.cases",
+      "rows": 29,
+      "sha256": "7d4bcc9b8d1f781c5775d06c117f0bac653a252905fed485b6a7c9aac72fb1f9",
+      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+    },
+    {
+      "at": "versionEvidence.independentArithmetic.cases",
+      "rows": 29,
+      "sha256": "7d4bcc9b8d1f781c5775d06c117f0bac653a252905fed485b6a7c9aac72fb1f9",
+      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
+    }
+  ],
+  "currentSource": {
+    "file": "apps/website/private/tool-code/canadian-c-spine-rule/calculator.js",
+    "bytes": 503,
+    "sha256": "151303f34129e83a8029039c81b6b1da5af9315892ac19fb96751fbe9f55b8af"
+  },
+  "clinicalValidation": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

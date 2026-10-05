@@ -1,0 +1,84 @@
+[
+  {
+    "id": "canadian-c-spine-rule",
+    "title": "Canadian C-Spine Rule",
+    "fields": [
+      [
+        "excl",
+        "Critério de exclusão: &lt; 16 anos, Glasgow &lt; 15, sinais vitais anormais, trauma há mais de 48 h, trauma penetrante, paralisia aguda, doença vertebral conhecida ou cirurgia cervical prévia",
+        "chk",
+        {}
+      ],
+      [
+        "idade65",
+        "<strong>Alto risco:</strong> idade ≥ 65 anos",
+        "chk",
+        {}
+      ],
+      [
+        "mecanismo",
+        "<strong>Alto risco:</strong> mecanismo perigoso (queda de ≥ 0,9 m ou 5 degraus, carga axial na cabeça, colisão em alta velocidade, capotamento ou ejeção, veículo recreativo motorizado, colisão de bicicleta)",
+        "chk",
+        {}
+      ],
+      [
+        "parestesia",
+        "<strong>Alto risco:</strong> parestesias nas extremidades",
+        "chk",
+        {}
+      ],
+      [
+        "colisao",
+        "<strong>Baixo risco:</strong> colisão traseira simples",
+        "chk",
+        {}
+      ],
+      [
+        "sentado",
+        "<strong>Baixo risco:</strong> sentado na sala de emergência",
+        "chk",
+        {}
+      ],
+      [
+        "deambulou",
+        "<strong>Baixo risco:</strong> deambulou em algum momento após o trauma",
+        "chk",
+        {}
+      ],
+      [
+        "tardia",
+        "<strong>Baixo risco:</strong> dor cervical de início tardio",
+        "chk",
+        {}
+      ],
+      [
+        "semdor",
+        "<strong>Baixo risco:</strong> sem dor à palpação na linha média cervical",
+        "chk",
+        {}
+      ],
+      [
+        "rot",
+        "Consegue rodar ativamente o pescoço 45° para a direita e para a esquerda?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim",
+            "na": "Ainda não testado"
+          }
+        }
+      ]
+    ],
+    "sources": [
+      [
+        "Stiell IG et al. The Canadian C-Spine Rule for radiography in alert and stable trauma patients. JAMA, 2001.",
+        "https://doi.org/10.1001/jama.286.15.1841"
+      ],
+      [
+        "Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.",
+        "https://doi.org/10.1056/NEJMoa031375"
+      ]
+    ]
+  }
+]

@@ -1,107 +1,344 @@
 [
   {
-    "label": "Idoso de 70 anos: alto risco, imagem",
-    "input": {
-      "idade65": true,
-      "rot": "1"
-    },
-    "expected": {
-      "raw": {
-        "img": 1,
-        "step": 1
-      },
-      "level": "high"
-    },
+    "id": "canadian-c-spine-rule",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Vetor sintético principal de referência",
     "originalInput": {
-      "idade65": true,
-      "rot": "1"
-    },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Sem fator de baixo risco: imagem",
-    "input": {
-      "rot": "1"
-    },
-    "expected": {
-      "raw": {
-        "img": 1,
-        "step": 2
-      },
-      "level": "high"
-    },
-    "originalInput": {
-      "rot": "1"
-    },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Colisão traseira simples, roda o pescoço: dispensável",
-    "input": {
-      "colisao": true,
-      "rot": "1"
-    },
-    "expected": {
-      "raw": {
-        "img": 0
-      },
-      "level": "low",
-      "verdict": "dispensável"
-    },
-    "originalInput": {
-      "colisao": true,
-      "rot": "1"
-    },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Deambulou, não roda o pescoço: imagem",
-    "input": {
-      "deambulou": true,
-      "rot": "0"
-    },
-    "expected": {
-      "raw": {
-        "img": 1,
-        "step": 3
-      },
-      "level": "high"
-    },
-    "originalInput": {
-      "deambulou": true,
-      "rot": "0"
-    },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Sentado, rotação ainda não testada",
-    "input": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
       "sentado": true,
-      "rot": "na"
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "1",
+      "contexto": "1"
     },
-    "expected": {
-      "level": "mid",
-      "verdict": "rotação ativa"
-    },
-    "originalInput": {
+    "input": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
       "sentado": true,
-      "rot": "na"
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "1",
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "img": 0,
+        "step": 3,
+        "incomplete": false
+      },
+      "main": "Negativo"
+    },
+    "recordedResult": {
+      "main": [
+        "Negativo",
+        ""
+      ],
+      "label": "Canadian C-Spine Rule",
+      "raw": {
+        "img": 0,
+        "step": 3,
+        "incomplete": false
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Critério de exclusão: não aplicável",
-    "input": {
-      "excl": true,
-      "rot": "1"
-    },
-    "expected": {
-      "error": true
-    },
+    "id": "canadian-c-spine-rule",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Alto risco prevalece; rotação não exigida",
     "originalInput": {
-      "excl": true,
-      "rot": "1"
+      "excl": false,
+      "idade65": true,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": null,
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
+    "input": {
+      "excl": false,
+      "idade65": true,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": null,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "img": 1,
+        "step": 1,
+        "incomplete": false
+      },
+      "main": "Positivo"
+    },
+    "recordedResult": {
+      "main": [
+        "Positivo",
+        ""
+      ],
+      "label": "Canadian C-Spine Rule",
+      "raw": {
+        "img": 1,
+        "step": 1,
+        "incomplete": false
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "canadian-c-spine-rule",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Sem fator de baixo risco",
+    "originalInput": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": false,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "1",
+      "contexto": "1"
+    },
+    "input": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": false,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "1",
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "img": 1,
+        "step": 2,
+        "incomplete": false
+      },
+      "main": "Positivo"
+    },
+    "recordedResult": {
+      "main": [
+        "Positivo",
+        ""
+      ],
+      "label": "Canadian C-Spine Rule",
+      "raw": {
+        "img": 1,
+        "step": 2,
+        "incomplete": false
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "canadian-c-spine-rule",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Baixo risco; rotação insuficiente",
+    "originalInput": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "0",
+      "contexto": "1"
+    },
+    "input": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "0",
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "img": 1,
+        "step": 3,
+        "incomplete": false
+      },
+      "main": "Positivo"
+    },
+    "recordedResult": {
+      "main": [
+        "Positivo",
+        ""
+      ],
+      "label": "Canadian C-Spine Rule",
+      "raw": {
+        "img": 1,
+        "step": 3,
+        "incomplete": false
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "canadian-c-spine-rule",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Rotação ainda não avaliada",
+    "originalInput": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "na",
+      "contexto": "1"
+    },
+    "input": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": "na",
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "img": null,
+        "step": 3,
+        "incomplete": true
+      },
+      "main": "Incompleto"
+    },
+    "recordedResult": {
+      "main": [
+        "Incompleto",
+        ""
+      ],
+      "label": "Canadian C-Spine Rule",
+      "raw": {
+        "img": null,
+        "step": 3,
+        "incomplete": true
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "canadian-c-spine-rule",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Rotação omitida não vira negativo",
+    "originalInput": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": null,
+      "contexto": "1"
+    },
+    "input": {
+      "excl": false,
+      "idade65": false,
+      "mecanismo": false,
+      "parestesia": false,
+      "colisao": false,
+      "sentado": true,
+      "deambulou": false,
+      "tardia": false,
+      "semdor": false,
+      "rot": null,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "img": null,
+        "step": 3,
+        "incomplete": true
+      },
+      "main": "Incompleto"
+    },
+    "recordedResult": {
+      "main": [
+        "Incompleto",
+        ""
+      ],
+      "label": "Canadian C-Spine Rule",
+      "raw": {
+        "img": null,
+        "step": 3,
+        "incomplete": true
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   }
 ]
